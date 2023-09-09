@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Carga de Datos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1><b>Formulario de Carga de Datos</b></h1>
+        </header>
+        <article>
+            <section>
+                <form id="formu">
+                    <div class="formulario">
+                        <div class="formulario_name">
+                            <label for="nombre" class="formulario__label">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required><br>
+                        </div>
+
+                        <div class="furmulario_secondname">
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" class="formulario__input" name="nombre" id="apellido" placeholder="Apellido" required><br>
+                        </div>
+
+                        <div class="furmulario_id">
+                            <label for="dni">DNI:</label>
+                            <input type="number" class="formulario__input" name="nombre" id="dni" placeholder="DNI" required><br>
+                        </div>
+
+                        <div class="formulario_fn">
+                            <label for="FN">Fecha de Nacimiento:</label>
+                            <input type="date" class="formulario__input" name="nombre" id="fn" placeholder="Fecha de Nacimiento" required><br>
+                        </div>
+
+                        <div class="formulario_address">
+                            <label for="domicilio">Domicilio:</label>
+                            <input type="text" class="formulario__input" name="nombre" id="domicilio" placeholder="Domicilio" required><br>
+                        </div>
+
+                        <div class="formulario_locality">
+                            <label for="localidad">Localidad:</label>
+                            <input type="text" class="formulario__input" name="nombre" id="localidad" placeholder="Localidad" required><br>
+                        </div>
+                        <div class="formulario_genere">
+                            <label for="sexo"><h3>Genero</h3></label>
+                            <label for="sexo">Masculino</label>
+                            <input type="radio" name="sexo" value="masculino">
+                            <label for="sexo">Femenino</label>
+                            <input type="radio" name="sexo" value="femenino">
+                            <label for="sexo">Desconocido</label>
+                            <input type="radio" name="sexo" value="desconocido">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for=""><h2>Idiomas que conoce</h2></label>
+                        <label for="box1">Español</label>
+                        <input type="checkbox" name="lenguajes" id="box1" value="Español">
+                        <label for="box2">Ingles</label>
+                        <input type="checkbox" name="lenguajes" id="box2" value="Ingles">
+                        <label for="box3">Frances</label>
+                        <input type="checkbox" name="lenguajes" id="box3" value="Frances"> 
+                        <label for="box4">Chino</label>
+                        <input type="checkbox" name="lenguajes" id="box4" value="Chino">
+                    </div>
+
+                    <div>
+                        <h4>Botenes de accion</h4>
+                        <button type="submit"> Enviar Datos</button>
+                        <button type="reset">Limpiar</button>
+                    </div>
+
+                    <h3 id="respuesta" class="text-center fw-light"></h3>
+                </form>
+            </section>
+        </article>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
